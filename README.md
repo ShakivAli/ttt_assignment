@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# About project
+
+This Project renders a profile screen of a user with its number of followers and following.
+It also contain the bio data including external links and information about likes, star, etc.
+
+## About Files
+
+It includes one Helper.js file having hardcoded Json format information. It also includes nested key-value pairs for the number of posts with the respective ids.
+
+It also includes one App.js file for main rendering on page.
+
+One App.css file for styling of App.js file
+
+## Libraries Used
+
+- **React**: A JavaScript library for building user interfaces. Used for creating components and managing the application state.
+
+- **React Hooks (useState)**: Used to manage the state of the `postVisible` variable, enabling dynamic visibility of user posts.
+
+## Plugins Used
+
+No external plugins are used in this project. The application relies on React and its built-in features.
+
+## Clone
+
+```bash
+git clone https://github.com/ShakivAli/ttt_assignment.git
