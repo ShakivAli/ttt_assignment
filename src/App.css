@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+
+.interface {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    background: black;
+    display: flex;
+    color: white;
+    padding: 10px 30px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .leftpart {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .leftpart img {
+    padding-right: 5px;
+    border-right: 1px solid;
+    border-color: rgb(255, 213, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.header .rightpart button {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    background: rgb(255, 213, 0);
+    border-style: none;
+    font-family: 'Lato', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.middlesection .bgImage {
+    /* width: 453px; */
+    width: 100vw;
+    height: 200px;
+}
+
+.middlesection .upper {
+    display: flex;
+    gap: 30px;
+    padding: 0px 40px;
+    font-family: 'Lato', sans-serif;
+    align-items: last baseline;
+    margin-top: -36px;
+}
+
+.middlesection .upper .profileImage {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+}
+
+.middlesection .upper .impdata {
+    font-weight: bold;
+}
+
+.middlesection .upper .impdata .name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.middlesection .upper .impdata .follow {
+    display: flex;
+    gap: 10px;
+}
+
+.middlesection .upper .impdata .follow p:nth-child(1) {
+    border: 1px solid grey;
+    color: grey;
+    padding: 5px 20px;
+    margin: 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.middlesection .upper .impdata .follow p:nth-child(2) {
+    margin: 0;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+.middlesection .upper .impdata .follow .followers, .middlesection .upper .impdata .follow .following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+
+.middlesection .middle {
+    padding-left: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+.middlesection .middle p:nth-child(1) {
+    margin-bottom: 2px;
+}
+
+.middlesection .middle p:nth-child(2) {
+    text-decoration: none;
+    margin: 0;
+}
+
+.middlesection .middle a {
+    text-decoration: none;
+}
+
+.middlesection .middle .icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 60px;
+}
+
+.middlesection {
+    border-bottom: 1px solid grey;
+}
+
+.lower {
+    padding-left: 20px;
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: -40.7px;
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    background: white;
+    cursor: pointer;
+}
+
+.lower p {
+    margin: 0;
+}
+
+.lowersection {
+    padding: 10px 20px;
+    margin-top: -0.1px;
+    border-bottom: 1px solid grey;
+    background: white;
+}
+
+.lowersection .upperportion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lowersection .title {
+    font-weight: 900;
+}
+
+.lowersection .content {
+    white-space: pre-line;  
+    vertical-align: bottom;
+}
+
+.lowersection .lowerportion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lowersection .lowerportion .leftpart {
+    font-size: small;
+    font-weight: 600;
+}
+
+.lowersection .lowerportion .rightpart {
+    display: flex;
+    font-size: small;
+    gap: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+    .middlesection .middle {
+        display: flex;
+        flex-direction: row;
+        align-items:last baseline;
+        justify-content: space-between;
+        padding-right: 30px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .middlesection .bgImage {
+        height: 400px;
+    }
 }
