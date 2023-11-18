@@ -74,6 +74,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 This Project renders a profile screen of a user with its number of followers and following.
 It also contain the bio data including external links and information about likes, star, etc.
 
+Demo : https://shakivtttassignment.netlify.app/
+
 ## About Files
 
 It includes one Helper.js file having hardcoded Json format information. It also includes nested key-value pairs for the number of posts with the respective ids.
